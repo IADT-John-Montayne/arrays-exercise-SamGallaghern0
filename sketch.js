@@ -44,19 +44,25 @@ console.log(fruits2);
 let basket = ["apple", "banana", "orange", "pear"];
 console.log(basket[0]);
 console.log(basket[basket.length-1]);
+
 basket.splice(basket.indexOf("banana"), 1, "kiwi");
 console.log(basket);
 basket.pop();
 console.log(basket);
 basket.unshift("mango");
 console.log(basket);
+// ${} string
 for (let i = 0; i < basket.length; i++) {
-	console.log(basket[i]);
+	console.log(`fruit at index ${i} is ${basket[i]}`);
 }
+
 console.log(basket.indexOf("orange"));
-if (basket.indexOf("orange") <= 1) {
-	console.log("Orange found at index 1");
+if (basket.indexOf("orange") >= 1) {
+	console.log("Orange found at index " + basket.indexOf("orange"));
 } else console.log("Orange not found");
+
+let citrus = basket.slice(1, 2);
+console.log(citrus);
 
 function setup() {
 	createCanvas(500, 500);
