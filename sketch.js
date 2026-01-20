@@ -27,6 +27,10 @@ console.log(fruits);
 fruits.shift();
 console.log(fruits);
 
+for (let i = 0; i < fruits.length; i++) {
+	console.log(fruits[i]);
+}  //forgot to add this earlier
+
 function setup() {
 	createCanvas(500, 500);
 	background(55);
