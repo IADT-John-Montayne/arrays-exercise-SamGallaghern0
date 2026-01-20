@@ -31,6 +31,15 @@ for (let i = 0; i < fruits.length; i++) {
 	console.log(fruits[i]);
 }  //forgot to add this earlier
 
+console.log(fruits.indexOf("banana"));
+console.log(fruits.indexOf("eggplant"));
+
+let fruits2 = ["apple", "banana", "orange", "pear"];
+let citrus = fruits2.slice(2, 4);
+console.log(citrus);
+fruits2.splice(1, 1, "grape");
+console.log(fruits2);
+
 function setup() {
 	createCanvas(500, 500);
 	background(55);
